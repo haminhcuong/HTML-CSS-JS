@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(145deg, #2193b0, #6dd5ed);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* MAIN SECTION */
+
+.main-section {
+  flex: 7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: solid #fff 1px;
+}
+
+.main-section .search-bar {
+  width: 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid #fff 1px;
+  height: 50px;
+  flex: 1;
+}
+
+.main-section .search-bar i {
+  position: absolute;
+  z-index: 2;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section .search-bar input {
+  background: transparent;
+  width: 100%;
+  height: 49px;
+  border: none;
+  padding-left: 44px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.main-section .search-bar input::placeholder {
+  color: rgb(206, 206, 206);
+}
+
+.main-section .search-bar input:focus {
+  outline: none;
+}
+
+.main-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 8;
+}
+
+.main-section .content .city-name {
+  font-size: 30px;
+}
+
+.main-section .content .weather-state {
+  font-size: 20px;
+}
+
+.main-section .content img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.main-section .content .temperature {
+  font-size: 100px;
+  position: relative;
+}
+
+.main-section .content .temperature::after {
+  content: "O";
+  position: absolute;
+  font-size: 30px;
+} 
+
+/* ADDITIONAL SECTION */
+
+.additional-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.additional-section .row {
+  display: flex;
+  flex: 1;
+}
+
+.additional-section .row .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.additional-section .row .item .value {
+  font-size: 0.8em;
+  font-weight: lighter;
+}

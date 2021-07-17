@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo.png" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a class="logo" href="#"><img src="./images/logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="text-box">
+          <h2>That's What<br /><span>I like</span></h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+            consectetur minus laborum unde sed voluptate quasi doloribus illum
+            laboriosam ea. Officiis placeat, voluptates consequatur natus porro
+            exercitationem, asperiores ad deserunt omnis eveniet numquam.
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+
+        <div class="img-box">
+          <img class="image" src="./images/pepsi001.png" alt="img" />
+        </div>
+      </div>
+
+      <div class="thumb">
+        <ul>
+          <li><img src="./images/pepsi001.png" alt="img" onclick="changeImage('./images/pepsi001.png'); changeBackground('#0062be');"/></li>
+          <li><img src="./images/pepsi002.png" alt="img" onclick="changeImage('./images/pepsi002.png'); changeBackground('#e60c2c');"/></li>
+          <li><img src="./images/pepsi003.png" alt="img" onclick="changeImage('./images/pepsi003.png'); changeBackground('#1e1e1e');"/></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <ul>
+          <li>
+            <a href="#"><img src="./images/facebook.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/instagram.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/twitter.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
